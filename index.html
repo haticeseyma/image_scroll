@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .delete{
+    float: left;
+    border:2px solid black;
+    margin:4px;
+    padding:6px;
+    width:150px;
+    
+  }
+</style>
+
+
+<body>
+ <div class="delete" id="im1">İmage1<br>
+  <img src="img1.jpg" style="width:100%" >
+  <button onclick="deleteelement()">delete</button>
+ </div>
+ <div class="delete" id="im2" >İmage2<br>
+  <img src="img2.webp" style="width:100%">
+  <button onclick="hiddenelement()">hidden</button>
+ </div>
+ <div class="delete" id="im3">İmage3<br>
+  <img src="img3.webp" style="width:100%">
+  <button onclick="resetelement()">reset</button>
+ </div>
+
+ <script>
+  function deleteelement(){
+    document.getElementById("im1").style.display="none";
+  }
+  function hiddenelement(){
+    document.getElementById("im2").style.visibility="hidden";
+  }
+  function resetelement(){
+    document.getElementById("im1").style.display="inline";
+    document.getElementById("im2").style.visibility="visible";
+  }
+ </script>
+</body>
+</html>
